@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="rollerworks_cache.driver.session.class">Rollerworks\Component\Cache\SessionCache</parameter>
+        <parameter key="rollerworks_cache.session_cache_bag.class">Rollerworks\Component\Cache\SessionCacheBag</parameter>
+    </parameters>
+
+    <services>
+        <service id="rollerworks_cache.driver.session_driver" class="%rollerworks_cache.driver.session.class%">
+            <argument type="service" id="session" />
+            <argument type="string">%rollerworks_cache.driver.session.storage_key%</argument>
+            <argument type="service" id="rollerworks_cache.session_cache_bag" />
+        </service>
+
+        <service id="rollerworks_cache.session_cache_bag" class="%rollerworks_cache.session_cache_bag.class%">
+            <argument type="string">%rollerworks_cache.driver.session.bag_name%</argument>
+        </service>
+    </services>
+</container>

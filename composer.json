@@ -1,0 +1,23 @@
+{
+    "name": "rollerworks/cache-bundle",
+    "description": "Doctrine caching-drivers bundle for Symfony",
+    "keywords": ["cache","symfony","bundle"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastiaan Stok",
+            "email": "s.stok@rollercapes.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/framework-bundle":  "2.1.*",
+        "rollerworks/cache": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "Rollerworks\\Bundle\\CacheBundle": "" }
+    },
+    "target-dir": "Rollerworks/Bundle/CacheBundle",
+    "minimum-stability": "dev"
+}
