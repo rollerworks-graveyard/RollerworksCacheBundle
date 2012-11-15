@@ -17,7 +17,10 @@
         </service>
 
         <service id="rollerworks_cache.session_cache_bag" class="%rollerworks_cache.session_cache_bag.class%">
-            <argument type="string">%rollerworks_cache.driver.session.bag_name%</argument>
+            <argument type="string">%rollerworks_cache.driver.session.storage_key%</argument>
+            <call method="setName">
+                <argument>%rollerworks_cache.driver.session.bag_name%</argument>
+            </call>
         </service>
     </services>
 </container>
