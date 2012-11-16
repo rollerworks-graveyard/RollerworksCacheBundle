@@ -13,7 +13,7 @@ namespace Rollerworks\Bundle\CacheBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Rollerworks\Bundle\RecordFilterBundle\DependencyInjection\Compiler\SessionPass;
+use Rollerworks\Bundle\CacheBundle\DependencyInjection\Compiler\SessionPass;
 
 class RollerworksCacheBundle extends Bundle
 {
