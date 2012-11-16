@@ -9,9 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Rollerworks\Bundle\RecordFilterBundle\DependencyInjection\Compiler;
+namespace Rollerworks\Bundle\CacheBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 
 /**
@@ -29,10 +30,10 @@ class SessionPass implements CompilerPassInterface
      */
     public function process(ContainerBuilder $container)
     {
-        if ($container->hasDefinition('rollerworks_cache.driver.session_driver')) {
+        if (!$container->hasDefinition('rollerworks_cache.driver.session_driver')) {
             return;
         }
 
-        $container->getDefinition('session')->addMethodCall('registerBag', array('rollerworks_cache.session_cache_bag'));
+        $container->getDefinition('session')->addMethodCall('registerBag', array(new Reference('rollerworks_cache.session_cache_bag')));
     }
 }
