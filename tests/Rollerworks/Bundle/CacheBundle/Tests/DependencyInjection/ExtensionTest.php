@@ -1,6 +1,6 @@
 <?php
 
-namespace Rollerworks\Bundle\CacheBundle\Testss\DependencyInjection;
+namespace Rollerworks\Bundle\CacheBundle\Tests\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

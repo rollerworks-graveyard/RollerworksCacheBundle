@@ -17,16 +17,12 @@ Thumbs.db
 nbproject
 *.sublime-project
 *.sublime-workspace
+phpunit.xml
 
 # Folders to ignore
-Resources/doc/_themes
-Resources/doc/_exts
 .idea
-
-phpunit.xml
 
 # Composer
 composer.lock
 composer.phar
 /vendor/
-/php-cs-fixer.phar

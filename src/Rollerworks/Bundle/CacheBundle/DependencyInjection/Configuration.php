@@ -1,7 +1,7 @@
 <?php
 
-/**
- * This file is part of the RollerworksCacheBundle.
+/*
+ * This file is part of the RollerworksCacheBundle package.
  *
  * (c) Sebastiaan Stok <s.stok@rollerscapes.net>
  *
