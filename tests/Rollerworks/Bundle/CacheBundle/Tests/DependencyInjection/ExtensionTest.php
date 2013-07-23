@@ -6,7 +6,6 @@ use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\Reference;
-use Symfony\Component\Config\Definition\Processor;
 use Rollerworks\Bundle\CacheBundle\DependencyInjection\RollerworksCacheExtension;
 use Rollerworks\Bundle\CacheBundle\DependencyInjection\Compiler\SessionPass;
 
