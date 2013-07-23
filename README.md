@@ -5,8 +5,8 @@
 
 The RollerworksCacheBundle provides the Symfony bundle configuration for the Rollerworks Cache Component.
 
-    The Rollerworks Cache component provides a Session based cache-driver
-    for Doctrine Common. (Cache data is stored in a session).
+> The Rollerworks Cache component provides a Session based cache-driver
+> for Doctrine Common. (Cache data is stored in a session).
 
 Installation
 ------------
@@ -18,7 +18,7 @@ http://getcomposer.org/ or just run the following command:
 
     curl -s http://getcomposer.org/installer | php
 
-Then just add the following to your
+Then add the following to your
 `composer.json` file:
 
 ```js
