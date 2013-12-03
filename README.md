@@ -1,6 +1,7 @@
 ﻿README
 ======
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/0ac03221-9d28-45b1-9652-c10299a66ad7/mini.png)](https://insight.sensiolabs.com/projects/0ac03221-9d28-45b1-9652-c10299a66ad7)
 [![Build Status](https://secure.travis-ci.org/rollerworks/RollerworksCacheBundle.png?branch=master)](http://travis-ci.org/rollerworks/RollerworksCache)
 
 The RollerworksCacheBundle provides the Symfony bundle configuration for the Rollerworks Cache Component.
