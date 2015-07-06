@@ -13,13 +13,14 @@
         >
     <testsuites>
         <testsuite name="RollerworksCacheBundle Test Suite">
-            <directory>./tests/Rollerworks/Bundle/CacheBundle/Tests/</directory>
+            <directory>./tests/</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist>
             <directory>./src</directory>
+            <directory>./vendor</directory>
         </whitelist>
     </filter>
 </phpunit>

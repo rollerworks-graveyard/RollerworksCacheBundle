@@ -1,10 +1,10 @@
-﻿README
-======
+﻿RollerworksCacheBundle
+======================
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/0ac03221-9d28-45b1-9652-c10299a66ad7/mini.png)](https://insight.sensiolabs.com/projects/0ac03221-9d28-45b1-9652-c10299a66ad7)
 [![Build Status](https://secure.travis-ci.org/rollerworks/RollerworksCacheBundle.png?branch=master)](http://travis-ci.org/rollerworks/RollerworksCache)
 
-The RollerworksCacheBundle provides the Symfony bundle configuration for the Rollerworks Cache Component.
+This bundle integrates the Rollerworks Cache Component in your Symfony application.
 
 > The Rollerworks Cache component provides a Session based cache-driver
 > for Doctrine Common. (Cache data is stored in a session).
@@ -12,32 +12,15 @@ The RollerworksCacheBundle provides the Symfony bundle configuration for the Rol
 Installation
 ------------
 
-RollerworksCacheBundle uses Composer to manage its dependencies.
+The RollerworksCacheBundle uses Composer to manage its dependencies.
 
 If you don't have Composer yet, download it following the instructions on
-http://getcomposer.org/ or just run the following command:
+http://getcomposer.org/
 
-    curl -s http://getcomposer.org/installer | php
-
-Then add the following to your
-`composer.json` file:
-
-```js
-// composer.json
-{
-    // ...
-    require: {
-        // ...
-        "rollerworks/cache-bundle": "~1.0"
-    }
-}
-```
-
-Then, you can install the new dependencies by running Composer's ``update``
-command from the directory where your ``composer.json`` file is located:
+Then add the `rollerworks/cache-bundle` package to your composer.json with:
 
 ```bash
-$ php composer.phar update rollerworks/cache-bundle
+$ composer require "rollerworks/cache-bundle"
 ```
 
 Now, Composer will automatically download all required files, and install them
@@ -58,20 +41,18 @@ $bundles = array(
 Configure the bundle
 --------------------
 
-Finally, add the following to your config file:
+The bundle is comes pre-configured, ready for usage.
+But for clarity, add the following to your config file:
 
 ``` yaml
 # app/config/config.yml
 
 rollerworks_cache:
-    session: ~
-
-    # or more verbose
     session:
-        # Optional storage key that used for storing the session
+        # Storage key that used for storing the session
         storage_key: _rollerworks_cache
 
-        # Optional session-bag name
+        # Session-bag name
         bag_name: cache
 ```
 
@@ -84,7 +65,3 @@ Resources
 ---------
 
 This Component is released under MIT license.
-
-You can run the unit tests with the following command:
-
-    phpunit

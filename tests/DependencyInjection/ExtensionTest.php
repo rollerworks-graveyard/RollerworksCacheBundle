@@ -1,9 +1,9 @@
 <?php
 
-/**
+/*
  * This file is part of the RollerworksCacheBundle package.
  *
- * (c) 2012 Sebastiaan Stok <s.stok@rollerscapes.net>
+ * (c) Sebastiaan Stok <s.stok@rollerscapes.net>
  *
  * This source file is subject to the MIT license that is bundled
  * with this source code in the file LICENSE.
@@ -11,12 +11,12 @@
 
 namespace Rollerworks\Bundle\CacheBundle\Tests\DependencyInjection;
 
-use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
+use Rollerworks\Bundle\CacheBundle\DependencyInjection\Compiler\SessionPass;
+use Rollerworks\Bundle\CacheBundle\DependencyInjection\RollerworksCacheExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
+use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
 use Symfony\Component\DependencyInjection\Reference;
-use Rollerworks\Bundle\CacheBundle\DependencyInjection\RollerworksCacheExtension;
-use Rollerworks\Bundle\CacheBundle\DependencyInjection\Compiler\SessionPass;
 
 class ExtensionTest extends \PHPUnit_Framework_TestCase
 {
@@ -51,8 +51,8 @@ class ExtensionTest extends \PHPUnit_Framework_TestCase
     protected function createContainer()
     {
         $container = new ContainerBuilder(new ParameterBag(array(
-            'kernel.charset'   => 'UTF-8',
-            'kernel.debug'     => false,
+            'kernel.charset' => 'UTF-8',
+            'kernel.debug' => false,
         )));
 
         $container->set('service_container', $container);

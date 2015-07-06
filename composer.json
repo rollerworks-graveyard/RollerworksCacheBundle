@@ -16,8 +16,13 @@
         "rollerworks/cache": "~1.1"
     },
     "autoload": {
-        "psr-0": {
-            "Rollerworks\\Bundle\\CacheBundle": "src/"
+        "psr-4": {
+            "Rollerworks\\Bundle\\CacheBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rollerworks\\Bundle\\CacheBundle\\": "tests/"
         }
     },
     "extra": {

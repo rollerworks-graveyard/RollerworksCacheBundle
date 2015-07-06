@@ -7,6 +7,6 @@ core.autocrlf=lf
 .gitattributes export-ignore
 .travis.yml export-ignore
 .php_cs export-ignore
+.gush.yml export-ignore
 phpunit.xml.dist export-ignore
-Tests export-ignore
-Resources/doc export-ignore
+tests/ export-ignore
