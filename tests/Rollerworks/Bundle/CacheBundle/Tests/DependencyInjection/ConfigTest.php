@@ -20,7 +20,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
     {
         $processor = new Processor();
         $configuration = new Configuration();
-        $config = $processor->processConfiguration($configuration, array(array('session' => array())));
+        $config = $processor->processConfiguration($configuration, array());
 
         $this->assertEquals('_rollerworks_cache', $config['session']['storage_key']);
         $this->assertEquals('cache', $config['session']['bag_name']);

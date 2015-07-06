@@ -27,6 +27,7 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->arrayNode('session')
+                    ->addDefaultsIfNotSet()
                     ->children()
                         ->scalarNode('storage_key')->defaultValue('_rollerworks_cache')->end()
                         ->scalarNode('bag_name')->defaultValue('cache')->end()
