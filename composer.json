@@ -1,6 +1,6 @@
 {
     "name": "rollerworks/cache-bundle",
-    "description": "Doctrine caching-drivers bundle for Symfony",
+    "description": "Symfony integration bundle for Rollerworks Session Cache",
     "keywords": ["cache", "symfony", "bundle"],
     "type": "symfony-bundle",
     "license": "MIT",
@@ -12,12 +12,17 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "symfony/framework-bundle": "~2.1",
-        "rollerworks/cache": "1.*"
+        "symfony/framework-bundle": "~2.3",
+        "rollerworks/cache": "~1.1"
     },
     "autoload": {
-        "psr-0": {
-            "Rollerworks\\Bundle\\CacheBundle": "src/"
+        "psr-4": {
+            "Rollerworks\\Bundle\\CacheBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rollerworks\\Bundle\\CacheBundle\\": "tests/"
         }
     },
     "extra": {
