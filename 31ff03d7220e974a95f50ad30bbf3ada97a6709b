@@ -1,0 +1,7 @@
+---------------------------------------------------------------------------
+
+by sstok at 2015-12-05 12:30
+
+Ughh, I'm going crazy over dependencies! Now the cache component is not compatible wth Symfony 3.0 :skull:
+
+OH: The cache component still supports Symfony 2.0 (OEL) and doesn't use PSR-4...
