@@ -55,7 +55,6 @@ class ExtensionTest extends \PHPUnit_Framework_TestCase
             'kernel.debug' => false,
         )));
 
-        $container->set('service_container', $container);
         $container->setDefinition('session', new Definition('Symfony\Component\HttpFoundation\Session\Session'));
 
         return $container;
